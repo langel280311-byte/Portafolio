@@ -1,16 +1,16 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #f4f4f4;
+    color: #222;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #222;
     color: white;
     padding: 15px;
     text-align: center;
@@ -20,7 +20,6 @@ nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-    text-align: justify;
 }
 
 nav a:hover {
@@ -31,16 +30,15 @@ section {
     padding: 20px;
     margin: 20px;
     background-color: black;
-    border-radius: 10px;   
-    color:white; 
+    border-radius: 10px;
+    color: white;
 }
 
-section img  {
+section img {
     width: 300px;
     border-radius: 10px;
     margin-top: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-
 }
 
 form {
@@ -49,8 +47,12 @@ form {
     gap: 10px;
 }
 
-input, button {
+input, textarea, button {
     padding: 10px;
+}
+
+textarea {
+    resize: vertical;
 }
 
 button {
@@ -65,10 +67,17 @@ button:hover {
 }
 
 .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    text-align: center;
     background-color: #f4f4f4;
+    color: #222;
 }
-    
+
+.list article {
+    text-align: center;
+}
