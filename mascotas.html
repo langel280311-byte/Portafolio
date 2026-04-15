@@ -8,30 +8,67 @@
 </head>
 <body>
 
-<header>
+<!-- HEADER con Flexbox -->
+<header class="header">
     <h1>Mis Mascotas</h1>
     <nav>
-        <a href="index.html">Volver al inicio</a>
+        <a href="index.html">← Volver al inicio</a>
     </nav>
 </header>
 
-<section class="list">
-    <article>
-        <h2>Esquimal Americano</h2>
-        <img src="imagenes/photo1.avif" alt="Esquimal Americano">
-        <p>Es una raza amigable, inteligente y muy activa. Ideal para familias.</p>
-    </article>
-    <article>
-        <h2>Pastor Alemán</h2>
-        <img src="imagenes/f2.avif" alt="Pastor Alemán">
-        <p>Conocido por su lealtad y capacidad de aprendizaje. Excelente perro guardián.</p>
-    </article>
-    <article>
-        <h2>Beagle</h2>
-        <img src="imagenes/f3.avif" alt="Beagle">
-        <p>Es un perro curioso, amigable y muy enérgico. Le encanta explorar.</p>
-    </article>
-</section>
+<main>
+
+    <!-- GALERÍA con Grid + Flexbox (TASK 4) -->
+    <section class="section">
+        <h2>Galería de Mascotas</h2>
+
+        <div class="galeria-grid">
+
+            <article class="card">
+                <img src="imagenes/photo1.avif" alt="Esquimal Americano">
+                <h3>Esquimal Americano</h3>
+                <p>Raza amigable, inteligente y muy activa. Ideal para familias.</p>
+            </article>
+
+            <article class="card">
+                <img src="imagenes/f2.avif" alt="Pastor Alemán">
+                <h3>Pastor Alemán</h3>
+                <p>Conocido por su lealtad y capacidad de aprendizaje. Excelente guardián.</p>
+            </article>
+
+            <article class="card">
+                <img src="imagenes/f3.avif" alt="Beagle">
+                <h3>Beagle</h3>
+                <p>Curioso, amigable y muy enérgico. Le encanta explorar nuevos lugares.</p>
+            </article>
+
+            <article class="card">
+                <img src="imagenes/f4.jpg" alt="Golden Retriever">
+                <h3>Golden Retriever</h3>
+                <p>Uno de los perros más cariñosos. Perfecto para toda la familia.</p>
+            </article>
+
+            <article class="card">
+                <img src="imagenes/f5.jpg" alt="Husky Siberiano">
+                <h3>Husky Siberiano</h3>
+                <p>Aventurero y resistente. Sus ojos azules son inconfundibles.</p>
+            </article>
+
+            <article class="card">
+                <img src="imagenes/f6.webp" alt="Labrador Retriever">
+                <h3>Labrador Retriever</h3>
+                <p>El perro de compañía más popular del mundo. Leal y juguetón.</p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Luis Fuentes</p>
+</footer>
 
 </body>
+</html>
 </html>

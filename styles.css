@@ -1,3 +1,9 @@
+/* ============================================================
+   styles.css — Portafolio de Luis Fuentes (Semana 2)
+   Colores: verde menta en header, fondo blanco, detalles gris claro
+   ============================================================ */
+
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -5,50 +11,171 @@
 }
 
 body {
-    background: #f4f4f4;
-    color: #222;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #222;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
+/* ============================================================
+   TASK 2 — HEADER CON FLEXBOX
+   ============================================================ */
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
+.header {
+    background-color: #a8d5ba; /* verde menta */
+    padding: 15px 30px;
 
-nav a:hover {
-    color: #00bcd4;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: black;
-    border-radius: 10px;
-    color: white;
-}
-
-section img {
-    width: 300px;
-    border-radius: 10px;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-form {
+    /* Flexbox: título a la izquierda, nav a la derecha */
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-input, textarea, button {
-    padding: 10px;
+.header h1 {
+    color: #2d6a4f;
+    font-size: 1.6rem;
+}
+
+/* Nav también usa Flexbox para distribuir los enlaces */
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: #2d6a4f;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.header nav a:hover {
+    background-color: #d8f0e4;
+}
+
+/* ============================================================
+   SECCIONES
+   ============================================================ */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #f9f9f9; /* gris muy claro */
+    border: 1px solid #e0e0e0; /* borde gris claro */
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: #2d6a4f;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #a8d5ba; /* línea verde menta */
+}
+
+.section p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* ============================================================
+   TASK 3 — PROYECTOS CON CSS GRID
+   ============================================================ */
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Tarjeta de proyecto */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 18px;
+
+    /* Flexbox interno para organizar el contenido en columna */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #2d6a4f;
+    font-size: 1rem;
+}
+
+.card p {
+    color: #777;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background-color: #a8d5ba;
+    color: #2d6a4f;
+    padding: 7px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #7ec8a0;
+}
+
+/* ============================================================
+   FORMULARIO DE CONTACTO
+   ============================================================ */
+
+form {
+    display: flex;         /* Flexbox en columna */
+    flex-direction: column;
+    gap: 12px;
+    max-width: 480px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a8d5ba;
 }
 
 textarea {
@@ -56,28 +183,90 @@ textarea {
 }
 
 button {
-    background-color: #222;
-    color: white;
-    border: none;
+    background-color: #a8d5ba;
+    color: #2d6a4f;
+    font-weight: bold;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: #00bcd4;
+    background-color: #7ec8a0;
 }
 
-.list {
-    display: flex;
-    flex-wrap: wrap;
+/* ============================================================
+   TASK 4 — GALERÍA DE MASCOTAS CON GRID + FLEXBOX
+   ============================================================ */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en mosaico */
     gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: #f4f4f4;
-    color: #222;
+    margin-top: 10px;
+
+    /* También se aplica flex-wrap para el flujo en filas */
 }
 
-.list article {
+/* Tarjeta de mascota con Flexbox interno */
+.galeria-grid .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.galeria-grid .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-grid .card h3 {
+    padding: 0 15px;
+    color: #2d6a4f;
+}
+
+.galeria-grid .card p {
+    padding: 0 15px 15px;
+    color: #777;
+    font-size: 0.88rem;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
     text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   RESPONSIVIDAD
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proyectos-grid,
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .proyectos-grid,
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
 }

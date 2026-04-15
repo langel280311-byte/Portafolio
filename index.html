@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<header>
+<!-- HEADER con Flexbox -->
+<header class="header">
     <h1>Luis Fuentes</h1>
     <nav>
         <a href="#sobre-mi">Sobre mí</a>
@@ -20,43 +21,56 @@
 
 <main>
 
-<section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Hola, mi nombre es Luis Fuentes.</p>
-    <p>Soy profesional en Administración de Empresas y actualmente me estoy formando en desarrollo de software. Me caracterizo por ser una persona analítica, organizada y con una fuerte capacidad de escucha, lo que me permite entender problemas y abordarlos de manera estructurada.</p>
-    <p>Decidí entrar al mundo tecnológico para integrar mi visión empresarial con soluciones digitales que generen valor en las organizaciones. Actualmente estoy fortaleciendo mis habilidades en lógica de programación con Python.</p>
-    <p>Me interesa enfocarme en análisis de datos y aportar al equipo desde la colaboración, el pensamiento estratégico y la búsqueda de soluciones eficientes. Estoy comprometido con mi aprendizaje y con seguir creciendo en este campo.</p>
-</section>
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+        <h2>Sobre mí</h2>
+        <p>Hola, mi nombre es Luis Fuentes.</p>
+        <p>Soy profesional en Administración de Empresas y actualmente me estoy formando en desarrollo de software. Me caracterizo por ser analítico, organizado y con fuerte capacidad de escucha.</p>
+        <p>Decidí entrar al mundo tecnológico para integrar mi visión empresarial con soluciones digitales. Actualmente estoy fortaleciendo mis habilidades en Python.</p>
+    </section>
 
-<section id="proyectos">
-    <h2>Proyectos</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/langel280311-byte/inventario" target="_blank">
-                Sistema de inventario en Python
-            </a>
-            <p>Aplicación en Python para gestionar productos, precios y cantidades.</p>
-        </li>
-        <li>
-            <a href="https://github.com/langel280311-byte/Portafolio" target="_blank">
-                Portafolio web en HTML y CSS
-            </a>
-            <p>Sitio web personal desarrollado con HTML5 y CSS.</p>
-        </li>
-    </ul>
-</section>
+    <!-- PROYECTOS con Grid -->
+    <section id="proyectos" class="section">
+        <h2>Proyectos</h2>
+        <div class="proyectos-grid">
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea placeholder="Mensaje" rows="4" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+            <article class="card">
+                <h3>Sistema de Inventario</h3>
+                <p>Aplicación en Python para gestionar productos, precios y cantidades.</p>
+                <a href="https://github.com/langel280311-byte/inventario" target="_blank" class="btn">Ver en GitHub</a>
+            </article>
+
+            <article class="card">
+                <h3>Portafolio Web</h3>
+                <p>Sitio web personal desarrollado con HTML5 y CSS.</p>
+                <a href="https://github.com/langel280311-byte/Portafolio" target="_blank" class="btn">Ver en GitHub</a>
+            </article>
+
+            <article class="card">
+                <h3>Análisis de Datos</h3>
+                <p>Proyecto de análisis de datos con Python y visualización de resultados.</p>
+                <a href="#" class="btn">Próximamente</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
 </main>
+
+<footer>
+    <p>© 2025 Luis Fuentes</p>
+</footer>
 
 </body>
 </html>
