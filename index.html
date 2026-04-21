@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- HEADER con Flexbox -->
+<!-- HEADER -->
 <header class="header">
     <h1>Luis Fuentes</h1>
     <nav>
@@ -21,37 +21,49 @@
 
 <main>
 
+    <!-- MENSAJE DE BIENVENIDA (TASK 5 — se muestra con JS al cargar) -->
+    <div id="mensaje-bienvenida"></div>
+
     <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="section">
         <h2>Sobre mí</h2>
         <p>Hola, mi nombre es Luis Fuentes.</p>
         <p>Soy profesional en Administración de Empresas y actualmente me estoy formando en desarrollo de software. Me caracterizo por ser analítico, organizado y con fuerte capacidad de escucha.</p>
-        <p>Decidí entrar al mundo tecnológico para integrar mi visión empresarial con soluciones digitales. Actualmente estoy fortaleciendo mis habilidades en Python.</p>
+        <p>Decidí entrar al mundo tecnológico para integrar mi visión empresarial con soluciones digitales.</p>
+
+        <!-- Párrafo dinámico (TASK 5 — cambia texto al hacer clic) -->
+        <p id="texto-dinamico">Actualmente estoy fortaleciendo mis habilidades en Python.</p>
+        <br>
+        <button id="btn-cambiar-texto">¿Cuál es mi meta?</button>
+
+        <br><br>
+
+        <!-- Mostrar/ocultar sección (TASK 5 — toggle de contenido) -->
+        <button id="btn-toggle-info">Ver mis habilidades</button>
+        <div id="info-extra">
+            <p>🛠️ <strong>Habilidades:</strong> Python · HTML5 · CSS3 · JavaScript · Análisis de datos · Gestión empresarial</p>
+        </div>
     </section>
 
-    <!-- PROYECTOS con Grid -->
+    <!-- PROYECTOS -->
     <section id="proyectos" class="section">
         <h2>Proyectos</h2>
         <div class="proyectos-grid">
-
             <article class="card">
                 <h3>Sistema de Inventario</h3>
                 <p>Aplicación en Python para gestionar productos, precios y cantidades.</p>
                 <a href="https://github.com/langel280311-byte/inventario" target="_blank" class="btn">Ver en GitHub</a>
             </article>
-
             <article class="card">
                 <h3>Portafolio Web</h3>
                 <p>Sitio web personal desarrollado con HTML5 y CSS.</p>
                 <a href="https://github.com/langel280311-byte/Portafolio" target="_blank" class="btn">Ver en GitHub</a>
             </article>
-
             <article class="card">
                 <h3>Análisis de Datos</h3>
                 <p>Proyecto de análisis de datos con Python y visualización de resultados.</p>
                 <a href="#" class="btn">Próximamente</a>
             </article>
-
         </div>
     </section>
 
@@ -72,5 +84,6 @@
     <p>© 2025 Luis Fuentes</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
