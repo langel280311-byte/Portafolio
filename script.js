@@ -1,20 +1,13 @@
-// script.js — Portafolio de Luis Fuentes (Semana 3)
-// Interactividad básica con JavaScript y manipulación del DOM
-
-// ============================================================
-// 1. MENSAJE DE BIENVENIDA AL CARGAR LA PÁGINA
-// ============================================================
+// mensaje de bienvenida al cargar la página
 window.addEventListener("load", function () {
     const mensaje = document.getElementById("mensaje-bienvenida");
     if (mensaje) {
         mensaje.style.display = "block"; // Muestra el mensaje
-        mensaje.textContent = "👋 ¡Bienvenido a mi portafolio! Soy Luis Fuentes.";
+        mensaje.textContent = "Bienvenido a mi portafolio";
     }
 });
 
-// ============================================================
-// 2. CAMBIAR TEXTO DEL PÁRRAFO AL HACER CLIC
-// ============================================================
+// cargar texto dinámico al hacer clic en el botón
 const btnCambiarTexto = document.getElementById("btn-cambiar-texto");
 
 if (btnCambiarTexto) {
@@ -32,9 +25,7 @@ if (btnCambiarTexto) {
     });
 }
 
-// ============================================================
-// 3. MOSTRAR / OCULTAR CONTENIDO CON UN BOTÓN (toggle)
-// ============================================================
+// mostrar/ocultar sección de habilidades al hacer clic en el botón
 const btnToggle = document.getElementById("btn-toggle-info");
 
 if (btnToggle) {
