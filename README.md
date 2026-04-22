@@ -1,28 +1,61 @@
-# Luis Fuentes — Personal Portfolio
+# Web Portfolio - Luis Fuentes
 
-A personal portfolio website built with HTML and CSS, showcasing my background, projects, and contact information.
-
-## Pages
-
-- **index.html** — Main page with About Me, Projects, and Contact sections
-- **mascotas.html** — A page about my pets
-
-## Projects Featured
-
-- **Python Inventory System** — App to manage products, prices, and quantities
-- **Web Portfolio** — This site, built with HTML5 and CSS
+This project is a personal web portfolio developed as part of a software development learning process. It includes a main page with personal information, projects, contact details, and an additional page featuring a pet gallery.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
+- JavaScript
 
-## How to Use
+## Project Structure
 
-1. Clone or download the repository
-2. Open `index.html` in your browser
-3. No installations or dependencies required
+The project is composed of the following files:
+
+- `index.html` → Main portfolio page.
+- `pets.html` → Secondary page with a pet gallery.
+- `styles.css` → Main stylesheet with responsive design.
+- `style.min.css` → Optimized and minified version of the styles.
+- `script.js` → JavaScript file with basic interactivity.
+
+## Implemented Features
+
+### Responsive Design
+Media queries were applied to adapt the layout to different screen sizes:
+
+- **Mobile:** column navigation, projects in one column, and gallery in two columns.
+- **Tablet:** projects in two columns and gallery in three columns.
+- **Desktop:** three-column layout.
+
+### Style Optimization
+The CSS structure was improved using:
+
+- Global variables in `:root`
+- Grouped rules
+- Simple and reusable selectors
+- Minified CSS version
+
+### JavaScript Interactivity
+Basic functions were added to improve interaction:
+
+- Welcome message when the page loads
+- Dynamic text change using a button
+- Show and hide skills with a button
+
+## Project Objective
+
+The objective of this project was to improve a previously developed portfolio by applying:
+
+- Responsive design with media queries
+- CSS best practices
+- Code optimization
+- Basic JavaScript and DOM manipulation fundamentals
+
+## GitHub Link
+
+https://github.com/langel280311-byte/Portafolio.git
 
 ## Author
 
-Luis Fuentes — Business Administration professional transitioning into software development, with a focus on data analysis and Python.
+**Luis Fuentes**  
+Business Administration professional currently training as a software developer.
