@@ -12,7 +12,7 @@ if (btnChangeText) {
     const paragraph = document.getElementById("dynamic-text");
 
     if (paragraph.textContent.includes("Python")) {
-      paragraph.textContent = "🚀 My goal is to combine business administration with software development to create innovative solutions.";
+      paragraph.textContent = " My goal is to combine business administration with software development to create innovative solutions.";
       btnChangeText.textContent = "Show original text";
     } else {
       paragraph.textContent = "I am currently strengthening my Python skills.";
